@@ -18,3 +18,18 @@ a {
     color: var(--off-w);
 }
 
+div {
+    display: block;
+}
+
+.nav {
+    position: relative;
+}
+
+.profile-picture {
+    height:300px
+}
+
+p {
+    color: var(--off-w);
+}
