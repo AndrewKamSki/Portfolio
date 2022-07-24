@@ -1,0 +1,20 @@
+/* Color Palette */
+:root {
+    --navy-blue: #0f1626;
+    --tan: #AB987A;
+    --coral: #FF533D;
+    --off-w: #F5F5F5;
+}
+
+body {
+    background-color: var(--navy-blue);
+}
+
+h1 {
+    color: var(--off-w);
+}
+
+a {
+    color: var(--off-w);
+}
+
