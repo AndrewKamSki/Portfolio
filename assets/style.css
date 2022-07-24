@@ -18,6 +18,10 @@ a {
     color: var(--off-w);
 }
 
+p {
+    color: var(--off-w);
+}
+
 div {
     display: block;
 }
@@ -28,8 +32,4 @@ div {
 
 .profile-picture {
     height:300px
-}
-
-p {
-    color: var(--off-w);
 }
