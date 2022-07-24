@@ -10,7 +10,7 @@ body {
     background-color: var(--navy-blue);
 }
 
-h1 {
+h1, h2 , h3{
     color: var(--off-w);
 }
 
@@ -31,5 +31,22 @@ div {
 }
 
 .profile-picture {
-    height:300px
+    height:300px;
+    width:362px;
+}
+
+.intro {
+
+}
+
+.container {
+
+}
+
+.web-apps {
+
+}
+
+.app-image {
+
 }
