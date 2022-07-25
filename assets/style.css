@@ -22,7 +22,6 @@ nav {
 }
 
 nav ul {
-    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -30,7 +29,6 @@ nav ul {
 nav ul li {
     display: inline-block;
     padding: 20px;
-    color: var(--off-w);
     border:2px solid black;
 }
 
@@ -45,9 +43,17 @@ body {
     color: var(--dark);
 }
 
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
 img {
     display:block;
-    max-width: 100%;
+    max-width: 50%;
 }
 
 div {
@@ -59,13 +65,11 @@ main {
     margin-top:100px;
 }
 
-/* ============= */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
 }
-/* ============= */
 
 .intro {
     text-align: center;
@@ -85,7 +89,12 @@ main {
 }
 
 .profile-picture {
-    max-height: 300px;
+    max-height: 500px;
+    margin: 25px auto 10px auto;
+}
+
+.my-work {
+
 }
 
 .web-apps {
