@@ -6,6 +6,8 @@
   <meta charset="utf-8">
   <title>Andrew Kaminski Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Installs League Spartan 500 Font Family -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
@@ -28,14 +30,16 @@
   <main>
 
     <!-- Introduction -->
-    <section class="intro" >
-      <h1>Andrew Kaminski</h1>
-      <img class="profile-picture" src="assets/img/profile_picture.JPG" alt="a picture of Andrew Kaminski">
-      <p>Software Developer</p>
-    </section>
+    <div class="row justify-center">
+      <section class="intro">
+        <h1>Andrew Kaminski</h1>
+        <img class="profile-picture" src="assets/img/profile_picture.JPG" alt="a picture of Andrew Kaminski">
+        <p>Software Developer</p>
+      </section>
+    </div>
 
     <!-- About Me Section -->
-    <section class="container" id="about-me">
+    <section class="center" id="about-me">
       <h2>About Me</h2>
       <p>This page tells my life story.</p>
     </section>
@@ -43,10 +47,10 @@
     <!-- My Work/ Portfolio Section -->
     <section class="my-work" id="work">
       <h2>Work</h2>
-
+      <!-- Refactoring Project -->
       <div class="web-apps">
-        <a href="#" class="application">
-          <img src="#" alt="" class="app-image">
+        <a href="https://andrewkamski.github.io/01-Challenge-Hiseon-Refactoring/" class="application">
+          <img src="assets/img/refactoring-project.png" alt="side-by-side code being refactored" class="app-image">
         </a>
       </div>
 
@@ -65,6 +69,7 @@
 
   </main>
 
+  <!-- Contact/Footer Section -->
   <footer id="contact">
     <h3>Contact Me</h3>
     <p>Thank you for visiting my page. For any inquiries, my email is <a href="mailto:andy.kaminski42@gmail.com">andy.kaminski42@gmail.com</a></p>
