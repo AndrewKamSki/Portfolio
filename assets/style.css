@@ -65,11 +65,7 @@ h4 {
     margin-top: 30px;
 }
 
-img {
-    display: block;
-}
-
-div {
+img, div {
     display: block;
 }
 
@@ -80,8 +76,8 @@ main {
 /* footer formatting */
 footer {
     display: block;
-    width: 90%;
-    margin: 0 auto 5% auto;
+    width: 100%;
+    margin: 0;
     text-align: center;
     background-color: var(--coral);
     color: var(--off-w);
@@ -140,7 +136,7 @@ footer ul li:hover {
     margin: 0 auto 5% auto;
 }
 
-.intro p {
+.intro p{
     font-style: italic;
 }
 
@@ -150,16 +146,7 @@ footer ul li:hover {
     min-width: 100px;
     width: 50%;
     margin: 25px auto 10px auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    justify-content: space-between;
-}
+} 
 
 .center {
     text-align: center;
@@ -202,7 +189,6 @@ footer ul li:hover {
 }
 
 .row {
-    display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -211,6 +197,9 @@ footer ul li:hover {
 .web-apps {
     margin-top: 2.5%;
     position: relative;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .web-apps a{
@@ -233,6 +222,14 @@ footer ul li:hover {
 
 .app-image {
     max-width: 100%;
+}
+
+.img2, {
+    width: 300px;
+}
+
+.img3 {
+    width: 360px;
 }
 
 @media screen and (max-width: 768px) {
