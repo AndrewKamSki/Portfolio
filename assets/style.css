@@ -42,11 +42,27 @@ nav {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 500%;
 }
 
 h2 {
-    font-size: 200%;
+    font-size: 300%;
+}
+
+h3 {
+    font-size: 100%;
+    position: absolute;
+    background-color: var(--navy-blue);
+    padding: 1%;
+    border: 2px solid;
+    border-color: var(--coral);
+    bottom: 0;
+    left: 0;
+}
+
+h4 {
+    font-size: 150%;
+    margin-top: 30px;
 }
 
 img {
@@ -61,11 +77,39 @@ main {
     flex: 1 0 auto;
 }
 
+/* footer formatting */
 footer {
     display: block;
-    width: 50%;
-    margin: 5% auto;
+    width: 90%;
+    margin: 0 auto 5% auto;
     text-align: center;
+    background-color: var(--coral);
+    color: var(--off-w);
+    padding: 20px;
+}
+
+footer ul {
+    margin: 2%;
+}
+footer ul li {
+    line-height: 1.5;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--off-w);
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+footer p a{
+    color: var(--off-w);
+}
+
+footer ul li:hover {
+    background-color: var(--dark);
+    transition-delay: 100ms;
 }
 
 /* Navbar formatting */
@@ -96,7 +140,7 @@ footer {
     margin: 0 auto 5% auto;
 }
 
-.intro p{
+.intro p {
     font-style: italic;
 }
 
@@ -114,6 +158,7 @@ footer {
     flex-direction: row;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
+    justify-content: space-between;
 }
 
 .center {
@@ -148,6 +193,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
     padding: 5%;
     margin: 5% auto;
     z-index: 900;
@@ -155,12 +201,34 @@ footer {
     color: var(--coral);
 }
 
+.row {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
 .web-apps {
     margin-top: 2.5%;
+    position: relative;
+}
+
+.web-apps a{
+    text-decoration: none;
+    color: var(--coral);
 }
 
 .web-apps:hover {
     box-shadow: 0 0 15px 1px var(--navy-blue);
+}
+
+.first-application {
+    width: 100%;
+}
+
+.otherapps {
+    flex: 1;
+    width: 50%;
 }
 
 .app-image {
@@ -176,7 +244,7 @@ footer {
         min-height: 40vh;
     }
     h1 {
-        font-size: 200%;
+        font-size: 300%;
     }
     nav {
         padding: 0;
