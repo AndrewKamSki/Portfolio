@@ -8,39 +8,37 @@
     --main-font: "League Spartan", sans-serif;
 
 }
-/* Navigation Bar */
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    z-index: 975;
-    width: 100%;
-    background-color: var(--coral);
+* {
     font-family: var(--main-font);
-    font-size: 20px;
 }
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 20px;
-    border:2px solid black;
-}
-
-nav ul li a {
-    color: var(--off-w);
-}
-
-/* ============= */
 
 body {
     background-color: var(--off-w);
     color: var(--dark);
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+header {
+    min-height: 20vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5%;
+    z-index: 999;
+    width: 100%;
+    background-color: var(--coral);
+    font-family: var(--main-font);
+    font-size: 20px;
+    position:fixed;
+    top: 0;
 }
 
 h1 {
@@ -52,8 +50,7 @@ h2 {
 }
 
 img {
-    display:block;
-    max-width: 50%;
+    display: block;
 }
 
 div {
@@ -62,18 +59,38 @@ div {
 
 main {
     flex: 1 0 auto;
-    margin-top:100px;
 }
 
+/* Navbar formatting */
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    flex: 1;
+    text-align: left;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--off-w);
+}
+
+.navbar ul li:hover {
+    background-color: var(--dark);
+    transition-delay: 100ms;
 }
 
 .intro {
     text-align: center;
-    max-width: 75%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto 15% auto;
+}
+
+.intro p{
+    font-style: italic;
 }
 
 .row {
@@ -84,23 +101,47 @@ main {
     margin-right: -1.5rem;
 }
 
-.justify-center {
-    justify-content: center;
-}
-
 .profile-picture {
-    max-height: 500px;
+    max-width: 360px;
+    max-height: 300px;
+    min-width: 100px;
+    width: 50%;
     margin: 25px auto 10px auto;
 }
 
 .my-work {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 8%;
+    z-index: 900;
 
 }
 
 .web-apps {
-
+    margin-top: 1.5rem;
 }
 
 .app-image {
-
+    max-width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar ul li {
+        display:block;
+        text-align: center;
+    }
+    header {
+        min-height: 30vh;
+    }
+    h1 {
+        font-size: 200%;
+    }
+}
+
+
+
